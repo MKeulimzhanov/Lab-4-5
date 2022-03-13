@@ -5,6 +5,7 @@
     <a
       [title]="product.name + 'details'"
       [routerLink]="['/products', product.id]"
+      
     >
       {{ product.name }}
     </a>
@@ -13,14 +14,20 @@
   <p *ngIf="product.description">description: {{ product.description }}</p>
 
   <button type="button" (click)="share()">Share</button>
+  <p></p>
+  
 
-  <button type="button" (click)="productItem()">Product Item</button>
+  <!--  <form [routerLink]="['product-item.component/:productitem]" target="_blank">
+    <button type="button">Product Item</button>
+  </form>
+-->
 
   <app-product-alerts
     [product]="product"
     (notify)="onNotify()"
   ></app-product-alerts>
 </div>
+
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.

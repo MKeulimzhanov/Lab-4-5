@@ -1,5 +1,6 @@
 export interface Product {
   id: number;
+  item: number;
   name: string;
   price: number;
   description: string;
@@ -8,24 +9,26 @@ export interface Product {
 export const products = [
   {
     id: 1,
-    name: 'Phone XL',
-    price: 999,
-    description: 'A large phone with one of the best screens'
+    item: 1,
+    name: 'IPhone 13 Pro Max',
+    price: 1099,
+    description: 'A large phone with one of the best screens',
   },
   {
     id: 2,
-    name: 'Phone Mini',
-    price: 899,
-    description: 'A great phone with one of the best cameras'
+    item: 2,
+    name: 'IPhone 13 Pro',
+    price: 999,
+    description: 'A great phone with one of the best cameras',
   },
   {
     id: 3,
-    name: 'Phone Standard',
-    price: 299,
-    description: ''
-  }
+    item: 3,
+    name: 'IPhone 13',
+    price: 699,
+    description: '',
+  },
 ];
-
 
 /*
 Copyright Google LLC. All Rights Reserved.
