@@ -21,7 +21,7 @@ export const products = [
   {
     id: 3,
     name: 'IPhone 13',
-    price: 699,
+    price: 829,
     description: 'Good IPhone',
   },
 ];
