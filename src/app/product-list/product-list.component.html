@@ -5,7 +5,6 @@
     <a
       [title]="product.name + 'details'"
       [routerLink]="['/products', product.id]"
-      
     >
       {{ product.name }}
     </a>
@@ -15,7 +14,10 @@
 
   <button type="button" (click)="share()">Share</button>
   <p></p>
-  
+
+  <a [routerLink]="['products-item' ,product.id]">
+    <button type="button">Product Item</button>
+  </a>
 
   <!--  <form [routerLink]="['product-item.component/:productitem]" target="_blank">
     <button type="button">Product Item</button>
@@ -26,8 +28,8 @@
     [product]="product"
     (notify)="onNotify()"
   ></app-product-alerts>
-</div>
 
+</div>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.

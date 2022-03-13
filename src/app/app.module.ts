@@ -25,7 +25,7 @@ import { ProductItemComponent } from './product-item/product-item.component';
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
       {
-        path: 'product-item.component/:productitem',
+        path: 'products-item/:productId',
         component: ProductItemComponent,
       },
     ]),
